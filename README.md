@@ -38,7 +38,6 @@ git clone https://github.com/your-username/financial-statement-auditor.git
 cd financial-statement-auditor
 python3 -m venv env
 source env/bin/activate
-pip install -r requirements.txt
 ```
 
 ---
@@ -67,8 +66,6 @@ pip install -r requirements.txt
 2. **Upload Statements**: Use the web interface to upload your financial and bank statements.
 3. **Start Auditing**: Initiate the audit process and review the generated reports.
 
-For full usage instructions, see the [User Guide](./docs/user-guide.md).
-
 ---
 
 ## 📝 Requirements
@@ -79,15 +76,9 @@ For full usage instructions, see the [User Guide](./docs/user-guide.md).
 
 ---
 
-## 📚 Documentation
-
-Explore our [Documentation](./docs) for comprehensive setup, customization, and usage details.
-
----
-
 ## 🤝 Contributing
 
-We welcome contributions! Please review our [Contributing Guidelines](./CONTRIBUTING.md) before submitting a pull request.
+We welcome contributions!
 
 ---
 
@@ -99,7 +90,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## 💬 Support
 
-If you have questions or encounter issues, open a [GitHub Issue](https://github.com/your-username/financial-statement-auditor/issues) or contact [Support](mailto:support@yourdomain.com).
+If you have questions or encounter issues, open a [GitHub Issue](https://github.com/UNIWYLIMP/audato-financial-auditing-system/issues) or contact [Support](mailto:uniwylimp@gmail.com).
 
 ---
 
