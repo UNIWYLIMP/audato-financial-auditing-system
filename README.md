@@ -1,8 +1,4 @@
-Here’s a styled GitHub description tailored to a Django-based project:
-
----
-
-# 🧾 Financial Statement Auditor
+# 🧾 Financial Statement Auditor (AUDATO)
 
 A Django-powered tool for auditing your financial statements against bank statements, helping you detect fraud, identify accounting errors, and ensure the accuracy of your financial records. This streamlined application automates reconciliation, making it ideal for businesses, accountants, and auditors seeking reliable financial oversight.
 
