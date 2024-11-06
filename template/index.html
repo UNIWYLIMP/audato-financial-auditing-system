@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}">
+  <script type="text/javascript" src="{% static '/js/jquery-1.9.1.min.js' %}"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h1 class="black"><span class="red">AUDA</span>TO</h1>
+    </div>
+    <div class="navigations">
+      <a href="/home">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Features</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="extra">
+      <a href="#">Fb</a>
+      <a href="#">Ld</a>
+      <a href="#">Tw</a>
+      <span class="classico_button">
+        <a href="/logout">LOGOUT</a>
+      </span>
+    </div>
+  </nav>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="">Financial Auditing System</h1>
+  </div>
+  <form class="container" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p><strong>Upload Bank Record</strong></p> 
+    <div id="drop-area" class="red"> 
+        <input class="drop-text" type="file" name="file1" accept="text/csv" placeholder="Drag and drop files here">
+    </div>
+    <br>
+    <p><strong>Upload Manual Record</strong></p>
+    <div id="drop-area" class="yellow"> 
+        <input class="drop-text" type="file" name="file2" accept="text/csv" placeholder="Drag and drop files here">
+    </div>
+    <span class="recto">
+      <button type="submit" class="process">process</button>
+    </span>
+  </form>
+
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="">Recent Audit</h1>
+    <br>
+  </div>
+  <div class="container">
+    {% for single_stack in stack_list %}
+    <a href="/view_result/{{single_stack.id}}" class="stack">
+      <h4>{{single_stack.id}}. {{ single_stack.response|truncatechars:34 }}</h4>
+    </a>
+    </br>
+    {% endfor %}
+    {% if length_of_stack == 0 %}
+    <br>
+    <br>
+    <br>
+    <h2 class="auth_header red">(No Recent Audited Financial Record)</h2>
+    {% endif %}
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>

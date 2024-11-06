@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="{% static '/css/index.css' %}">
+  <script type="text/javascript" src="{% static '/js/jquery-1.9.1.min.js' %}"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h1 class="black"><span class="red">AUDA</span>TO</h1>
+    </div>
+    <div class="navigations">
+      <a href="/home">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Features</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="extra">
+      <a href="#">Fb</a>
+      <a href="#">Ld</a>
+      <a href="#">Tw</a>
+      <span class="classico_button">
+        <a href="/logout">LOGOUT</a>
+      </span>
+    </div>
+  </nav>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="">Financial Auditing Computing Result</h1>
+  </div>
+  <div class="container">
+    <p><strong>Audit Response</strong></p>
+    <div id="drop-area" class="">
+        {{result}}
+    </div>
+    <br>
+    <span class="recto">
+      <a href="{{file_one}}" class="process">Bank Record File</a>
+    </span>
+    <span class="recto">
+      <a href="{{file_two}}" class="process">Manual Record File</a>
+    </span>
+  </div>
+  <br>
+  <br>
+</body>
+</html>
